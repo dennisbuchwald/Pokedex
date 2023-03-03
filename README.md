@@ -52,8 +52,8 @@ Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der 
 
 ### Geplante Änderungen/Funktionen für zukünftige Versionen:
 
+- Erstellung der UI/UX
 - Hinzufügen der Suchfunktion
-- Verbesserung der UI/UX
 - Anbindung an die API
 
 Ich möchten uns bei allen bedanken, die mir Feedback gegebe. Eure Unterstützung ist mir sehr wichtig, um diese App zu verbessern und weiterzuentwickeln.
