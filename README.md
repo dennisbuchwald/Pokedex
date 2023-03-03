@@ -37,3 +37,36 @@ Die App wurde mit React erstellt und verwendet die folgenden Technologien:
 ### Credits
 
 Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der [PokéAPI API](https://pokeapi.co/) bezogen.
+
+## Versionsgeschichte
+
+### Version 0.1.0 (03. März 2023)
+
+- Erste Alpha-Veröffentlichung der Pokédex-App
+- Erster Entwurf des Designs und Aktualisierung des Hintergrunds
+- Erstellung des Grundgerüsts
+
+### Bekannte Probleme/Einschränkungen:
+
+- Die App hat noch keine Funktionen implementiert
+
+### Geplante Änderungen/Funktionen für zukünftige Versionen:
+
+- Hinzufügen der Suchfunktion
+- Verbesserung der UI/UX
+- Anbindung an die API
+
+Ich möchten uns bei allen bedanken, die mir Feedback gegebe. Eure Unterstützung ist mir sehr wichtig, um diese App zu verbessern und weiterzuentwickeln.
+
+<!-- - Benutzer können eine Liste von Pokémon anzeigen lassen und Details zu jedem Pokémon anzeigen
+- Pokémon-Daten werden von der PokéAPI API bezogen -->
+
+<!-- 
+Version 1.1.0 (10. März 2023)
+Verbesserung der Benutzeroberfläche und des Designs
+Hinzufügen von Bildern für jedes Pokémon
+Verbesserte Navigation innerhalb der App
+Version 1.2.0 (17. März 2023)
+Hinzufügen von Filteroptionen für die Pokémon-Liste
+Verbesserte Leistung beim Laden von Pokémon-Daten
+Behobene Fehler und Verbesserungen der App-Stabilität -->
