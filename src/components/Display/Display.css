@@ -1,11 +1,56 @@
+@font-face {
+	font-family: "GBA-Font";
+	src: url(/public/PokemonGBA.ttf) format(truetype);
+}
+
+h1 {
+	color: black;
+}
+
+h2 {
+	color: black;
+	font-family: "GBA-Font", sans-serif;
+}
+
 .display {
-    background-color: #d2d2d2;
-    border-radius: 15px;
-    border: 5px solid #f9f9f9;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 400px;
-    height: 500px;
-    margin: 0 auto;
-  }
-  
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	/* border: 5px solid #ff0000; */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	width: 380px;
+	height: 280px;
+	margin-top: -200px;
+	margin-left: -85px;
+}
+
+.pokemon-container {
+	display: flex;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.pokemon-name {
+	margin-right: -50px;
+	font-size: 30px;
+}
+
+.pokemon-image {
+	width: 300px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+	.display {
+		width: 80%;
+		height: auto;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

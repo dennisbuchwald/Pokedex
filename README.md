@@ -46,22 +46,31 @@ Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der 
 - Erster Entwurf des Designs und Aktualisierung des Hintergrunds
 - Erstellung des Grundgerüsts
 
+### Version 0.2.0 (04. März 2023)
+
+- Das App-Design wurde überarbeitet und verbessert.
+- Eine Komponente namens "Display" wurde integriert, die die Informationen von der API anzeigt.
+- Eine Anbindung an die PokeAPI wurde hinzugefügt, um Informationen über Pokémon abzurufen.
+  Zwei "Buttons" wurde hinzugefügt, der es dem Benutzer ermöglicht, neue Pokémon-Daten abzurufen.
+- Das Styling des "Display" wurde verbessert, um das Erscheinungsbild der App zu verbessern.
+
 ### Bekannte Probleme/Einschränkungen:
 
-- Die App hat noch keine Funktionen implementiert
+- Buttons Funktionieren noch nicht
+- Display ist nicht responsiv
 
 ### Geplante Änderungen/Funktionen für zukünftige Versionen:
 
-- Erstellung der UI/UX
+- Erstellung der UI/UX ✅
 - Hinzufügen der Suchfunktion
-- Anbindung an die API
+- Anbindung an die API ✅
 
 Ich möchten uns bei allen bedanken, die mir Feedback gegebe. Eure Unterstützung ist mir sehr wichtig, um diese App zu verbessern und weiterzuentwickeln.
 
 <!-- - Benutzer können eine Liste von Pokémon anzeigen lassen und Details zu jedem Pokémon anzeigen
 - Pokémon-Daten werden von der PokéAPI API bezogen -->
 
-<!-- 
+<!--
 Version 1.1.0 (10. März 2023)
 Verbesserung der Benutzeroberfläche und des Designs
 Hinzufügen von Bildern für jedes Pokémon
