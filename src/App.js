@@ -5,7 +5,7 @@ import { Button } from "./components/Button/Button.js";
 import { Fooder } from "./components/Fooder/Fooder.js";
 
 function App() {
-	const version = "0.2.1";
+	const version = "0.2.2";
 	const developer = "Dennis Buchwald";
 	const date = "5. März 2023";
 
