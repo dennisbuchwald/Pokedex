@@ -1,7 +1,7 @@
 import React from "react";
 import "./Fooder.css";
 
-export function Footer(props) {
+export function Fooder(props) {
 	return (
 		<footer class="footer-container">
 			<p class="version">Version: {props.version}</p>
@@ -11,4 +11,4 @@ export function Footer(props) {
 	);
 }
 
-export default Footer;
+export default Fooder;

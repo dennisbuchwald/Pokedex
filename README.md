@@ -54,6 +54,20 @@ Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der 
   Zwei "Buttons" wurde hinzugefügt, der es dem Benutzer ermöglicht, neue Pokémon-Daten abzurufen.
 - Das Styling des "Display" wurde verbessert, um das Erscheinungsbild der App zu verbessern.
 
+### Version 0.3.0 (05. März 2023)
+
+- API anbindung Bugfix
+- Funktionn den Buttons hinzugefügt
+- Begrenzung der möglichen Pokemons die angezeigt werden können von 1 - 151
+- Display überarbeitet
+
+Technisch:
+
+- In der Datei `Button.js` habe ich den Button als eine Komponente definiert, die zwei Buttons, "Prev" und "Next", enthält. Ich habe auch zwei Funktionen, `handlePrev` und `handleNext`, erstellt, die aufgerufen werden, wenn auf die entsprechenden Buttons geklickt wird.
+- In der Datei `App.js` habe Ich number als State mithilfe von `useState` definiert und ihn auf 6 gesetzt (Glurak). Ich habe auch die beiden Funktionen `handlePrev` und `handleNext` in App.js definiert und sie so geschrieben, dass sie den Wert von number erhöhen bzw. verringern, wenn auf den "Next" bzw. "Prev" Button geklickt wird.
+- Ich habe die beiden Funktionen `handlePrev` und `handleNext` als Props an die Button Komponente weitergegeben, damit sie auf die Klicks der Buttons reagieren kann.
+- Ich habe auch die beiden Bedingungen if (number <= 0) und if (number >= 151) in `handlePrev` und `handleNext` hinzugefügt, um sicherzustellen, dass number nicht unter 0 oder über 151 gehen kann.
+
 ### Bekannte Probleme/Einschränkungen:
 
 - Buttons Funktionieren noch nicht
