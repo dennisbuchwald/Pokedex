@@ -6,11 +6,11 @@ function Pokemon(props) {
 
 	useEffect(() => {
 		async function fetchData() {
-			const data = await fetchPokemon(props.name);
+			const data = await fetchPokemon(props.number);
 			setPokemon(data);
 		}
 		fetchData();
-	}, [props.name]);
+	}, [props.number]);
 
 	if (!pokemon) return <div>Loading...</div>;
 
