@@ -1,21 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import { Display } from "./components/Display"
-
+import "./App.css";
+import { Display } from "./components/Display/Display.js";
+import { Button } from "./components/Button/Button.js";
+import { Footer } from "./components/Fooder/Fooder.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      <Display />
-      </header>
+	const version = "0.2.0";
+	const developer = "Dennis Buchwald";
+	const date = "4. März 2023";
 
-    </div>
-  );
+	return (
+		<>
+			<div className="App">
+				<body className="App-header">
+					<Display />
+					<Button />
+				</body>
+				<Footer version={version} developer={developer} date={date} />
+			</div>
+		</>
+	);
 }
 
 export default App;
