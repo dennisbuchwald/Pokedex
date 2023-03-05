@@ -21,7 +21,11 @@ function Pokemon(props) {
 			</h2>
 			<img
 				className="pokemon-image"
-				src={pokemon.sprites.front_default}
+				src={
+					props.isShiny
+						? pokemon.sprites.front_shiny
+						: pokemon.sprites.front_default
+				}
 				alt={pokemon.name}
 			/>
 		</div>

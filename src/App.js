@@ -5,11 +5,12 @@ import { Button } from "./components/Button/Button.js";
 import { Fooder } from "./components/Fooder/Fooder.js";
 
 function App() {
-	const version = "0.2.3";
+	const version = "0.2.4";
 	const developer = "Dennis Buchwald";
 	const date = "5. März 2023";
 
-	const [number, setNumber] = useState(151);
+	const [isShiny, setIsShiny] = useState(false);
+	const [number, setNumber] = useState(6);
 
 	const handlePrevClick = () => {
 		setNumber((prevNumber) => Math.max(1, prevNumber - 1));
@@ -19,16 +20,20 @@ function App() {
 		setNumber((prevNumber) => Math.min(151, prevNumber + 1));
 	};
 
-	// mit Math.min und Math.max wurde begrenzt dass ich nur die Kanto (ersten 150 Pokemon) anzeige
+	const handleShinyMode = () => {
+		setIsShiny(!isShiny);
+	};
 
 	return (
 		<>
 			<div className="App">
 				<body className="App-header">
-					<Display number={number} />
+					<Display number={number} isShiny={isShiny} />
 					<Button
 						handlePrevClick={handlePrevClick}
 						handleNextClick={handleNextClick}
+						handleShinyMode={handleShinyMode}
+						isShiny={isShiny}
 					/>
 				</body>
 				<Fooder version={version} developer={developer} date={date} />
