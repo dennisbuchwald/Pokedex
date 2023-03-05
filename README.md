@@ -2,6 +2,10 @@
 
 Dies ist eine Pokédex-App, die mit React erstellt wurde. Die App ermöglicht es dem Benutzer, eine Liste von Pokémon anzuzeigen und Details zu jedem Pokémon anzuzeigen.
 
+Die App ist aktuell optimiert auf das IPhone 13 Pro.
+
+https://pokedext-app-kanto.vercel.app
+
 ## Installation
 
 Um die App zu installieren, müssen Sie die folgenden Schritte ausführen:
@@ -51,7 +55,7 @@ Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der 
 - Das App-Design wurde überarbeitet und verbessert.
 - Eine Komponente namens "Display" wurde integriert, die die Informationen von der API anzeigt.
 - Eine Anbindung an die PokeAPI wurde hinzugefügt, um Informationen über Pokémon abzurufen.
-  Zwei "Buttons" wurde hinzugefügt, der es dem Benutzer ermöglicht, neue Pokémon-Daten abzurufen.
+- Zwei "Buttons" wurde hinzugefügt, der es dem Benutzer ermöglicht, neue Pokémon-Daten abzurufen.
 - Das Styling des "Display" wurde verbessert, um das Erscheinungsbild der App zu verbessern.
 
 ### Version 0.3.0 (05. März 2023)
@@ -60,6 +64,9 @@ Diese App wurde von Dennis Buchwald erstellt. Die Pokémon-Daten wurden von der 
 - Funktionn den Buttons hinzugefügt
 - Begrenzung der möglichen Pokemons die angezeigt werden können von 1 - 151
 - Display überarbeitet
+- Neue Buttons hinzugefügt
+- Soundeffekt beim Klicken des Buttons
+- Ein Button mit dem "Shiny Mode" wurde hinzugeführt der erlaubt die Poekmons in ihrer Shiny Version zu zeigen.
 
 Technisch:
 
@@ -67,10 +74,14 @@ Technisch:
 - In der Datei `App.js` habe Ich number als State mithilfe von `useState` definiert und ihn auf 6 gesetzt (Glurak). Ich habe auch die beiden Funktionen `handlePrev` und `handleNext` in App.js definiert und sie so geschrieben, dass sie den Wert von number erhöhen bzw. verringern, wenn auf den "Next" bzw. "Prev" Button geklickt wird.
 - Ich habe die beiden Funktionen `handlePrev` und `handleNext` als Props an die Button Komponente weitergegeben, damit sie auf die Klicks der Buttons reagieren kann.
 - Ich habe auch die beiden Bedingungen if (number <= 0) und if (number >= 151) in `handlePrev` und `handleNext` hinzugefügt, um sicherzustellen, dass number nicht unter 0 oder über 151 gehen kann.
+- In `Button.js` habe ich eine weitere Funktion `handleShinyMode` hinzugefügt, die aufgerufen wird, wenn auf den "Shiny Mode" Button geklickt wird.
+- Ich habe auch eine neue State-Variable `isShiny` definiert und sie standardmäßig auf `false` gesetzt. Wenn der "Shiny Mode" Button geklickt wird, wird der Wert von `isShiny` umgedreht.
+- In App.js habe ich die `handleShinyMode` Funktion als Prop an die Button Komponente weitergegeben, damit sie auf den Klick des "Shiny Mode" Buttons reagieren kann.
+- Ich habe auch eine weitere Prop `isShiny` an die Button Komponente weitergegeben, damit der "Shiny Mode" Button aktiviert wird, wenn `isShiny` auf `true` gesetzt ist.
+- Ich habe auch eine weitere Komponente Fooder hinzugefügt, um Informationen über die App anzuzeigen.
 
 ### Bekannte Probleme/Einschränkungen:
 
-- Buttons Funktionieren noch nicht
 - Display ist nicht responsiv
 
 ### Geplante Änderungen/Funktionen für zukünftige Versionen:
@@ -78,6 +89,13 @@ Technisch:
 - Erstellung der UI/UX ✅
 - Hinzufügen der Suchfunktion
 - Anbindung an die API ✅
+- Hinzufügen von Soundeffektn beim Klicken eine Buttons
+- Hinzufügen einses "Shiny Mode" ✅
+- Der Shiny Button soll die Farbe ändern, sobald er gedrückt ist.
+- Hinzufügen eines "Info Screens"
+- Hinzufügen von Hintergrund Musik
+- Hinzufügen eines Menüs zum Steuern der Lautstärke der Soundeffekt und der Hintergrund Musik
+- App auf Deutsch ändern
 
 Ich möchten uns bei allen bedanken, die mir Feedback gegebe. Eure Unterstützung ist mir sehr wichtig, um diese App zu verbessern und weiterzuentwickeln.
 
