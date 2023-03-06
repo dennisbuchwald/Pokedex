@@ -21,7 +21,7 @@ export function Button({
 						new Audio(buttonSound).play();
 					}}
 				>
-					vorheriges Pokemon
+					Vorheriges Pokemon
 				</button>
 				<button
 					className="button btn-next"
@@ -46,9 +46,11 @@ export function Button({
 				</button>
 				<button
 					className="button info"
+					disabled="disabled"
 					onClick={() => {
 						new Audio(buttonSound).play();
 					}}
+					// Button funktioniert aktelll nicht. 
 				>
 					Info
 				</button>

@@ -13,7 +13,7 @@ export function Fooder(props) {
 				<br /> {props.developer}
 			</p>
 			<p class="date">
-				Datum:
+				Letztes Update:
 				<br /> {props.date}
 			</p>
 		</footer>
