@@ -1,37 +1,45 @@
 .buttons {
-	position: absolute;
-	margin-left: 18px;
-	bottom: 5%;
-	left: 50%;
-	width: 65%;
-	transform: translate(-57%, 0);
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	gap: 20px;
-}
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5pxx;
+	width: 80%;
+	margin: -30px;
+
+	}
+
+
+.button {
+		width: 40%;
+		padding: 3% -0%;
+		border: 2px solid #000;
+		border-radius: 5px;
+		font-size: clamp(8px, 5vw, 1rem);
+		font-weight: 600;
+		color: white;
+		background-color: #444;
+		box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+		margin: 10px;
+		
+	  }
 
 .top-buttons {
 	display: flex;
-	gap: 20px;
+
 }
 
 .bottom-buttons {
 	display: flex;
-	gap: 20px;
-}
+	flex: 1;
+	align-items: center;
+	flex-wrap: wrap;
 
-.button {
-	width: 50%;
-	padding: 4%;
-	border: 2px solid #000;
-	border-radius: 5px;
-	font-size: clamp(8px, 5vw, 1rem);
-	font-weight: 600;
-	color: white;
-	background-color: #444;
-	box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
-}
+  }
+  
+  .bottom-buttons .button {
+	width: 40%;
+	padding: 3% 0%;
+  }
 
 .button:active {
 	box-shadow: inset -4px 4px 0 #222;
@@ -51,3 +59,23 @@
 .button.info {
 	background-color: #bcbcbc;
 }
+
+@media only screen and (min-width: 768px) {
+	.buttons {
+	width: 50%;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	}
+	.top-buttons {
+	flex-basis: 50%;
+	}
+	.bottom-buttons {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	}
+	}
+	

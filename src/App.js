@@ -5,9 +5,9 @@ import { Button } from "./components/Button/Button.js";
 import { Fooder } from "./components/Fooder/Fooder.js";
 
 function App() {
-	const version = "0.2.4";
+	const version = "0.3.2";
 	const developer = "Dennis Buchwald";
-	const date = "5. März 2023";
+	const date = "6. März 2023";
 
 	const [isShiny, setIsShiny] = useState(false);
 	const [number, setNumber] = useState(6);
